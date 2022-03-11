@@ -30,10 +30,14 @@ nav {
 
 article
 {
+	position: left
+	width: 50%;
 	background: darkgrey;
 }
 
 aside
 {
-	background: grey;
+	position: right;
+	width: 50%;
+	background: darkgrey;
 }
