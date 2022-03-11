@@ -1,0 +1,54 @@
+/* STYLE SHEET FOR INDEX.HTM */
+
+@font-face {
+	font-family: oregonfont;
+	src: url("../media/oregon book.ttf");
+}
+
+body {
+
+	font-family: oregonfont;
+	font-size: 85%;
+	background: white;
+}
+	
+footer {
+text-align: center;
+width: 100%;
+padding: 3px;
+background-color: silver;
+color: white;
+bottom: 0;
+position: fixed;
+}
+
+header {
+	background: silver;
+	width: 100%;
+}
+section{
+	width: 100%;
+	background: silver;
+}
+
+nav {
+	
+}
+
+article
+{
+	position: absolute;
+	top: 180px;
+	left: 0;
+	width: 65%;
+	background: darkgrey;
+}
+
+aside
+{
+	position: absolute;
+	right: 0;
+	top: 180px;
+	width: 35%;
+	background: grey;
+}
