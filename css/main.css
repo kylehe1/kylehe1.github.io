@@ -37,10 +37,6 @@ nav {
 
 article
 {
-	position: absolute;
-	top: 180px;
-	left: 0;
-	width: 65%;
 	background: darkgrey;
 }
 
