@@ -5,6 +5,26 @@
 	src: url("../media/oregon book.ttf");
 }
 
+.header {
+	padding: 30px 0;
+}
+
+.header .profile-image {
+	margin-right: 30px;
+	width: 10%;
+	height: 10%;
+	border-radius: 50%;
+}
+.header .profile-content .name{
+	margin-bottom: 5px;
+	margin-top: 30px;
+}
+.header .profile-content. desc{
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+
 body {
 
 	font-family: oregonfont;
@@ -37,7 +57,11 @@ article
 
 aside
 {
-	position: right;
 	width: 50%;
 	background: silver;
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1360px;
+  }
 }
