@@ -1,0 +1,145 @@
+/* STYLE SHEET FOR INDEX.HTM */
+
+@font-face {
+	font-family: oregonfont;
+	src: url("../media/oregon book.ttf");
+}
+
+body {
+	margin-left: auto; 
+	margin-right: auto;
+	font-family: oregonfont;
+	font-size: 85%;
+
+}
+	
+footer {
+	margin-left: auto; 
+	margin-right: auto;
+	width: 100%;
+	background-color: silver;
+	bottom: 0;
+	position: fixed;
+}
+
+header {
+	top: 0;
+	margin-left: auto; 
+	margin-right: auto;
+	position: fixed;
+	background: silver;
+	width: 100%;
+	z-index: 1;
+}
+table#equalcol{
+	width: 50%;
+}
+
+section{
+	width: 100%;
+	
+}
+
+nav {
+	
+}
+
+article
+{
+	margin-left: auto; 
+	margin-right: auto;
+	position: absolute;
+	top: 180px;
+	left: 0;
+	width: 65%;
+	height: 100%;
+	background: white;
+}
+
+aside
+{
+	margin-left: auto; 
+	margin-right: auto;
+	position: fixed;
+	right: 0;
+	top: 180px;
+	width: 35%;
+	height: 100%;
+	background: silver;
+}
+
+#active-page
+{
+	background-color: blue;
+}
+
+.book-content {
+	z-index: 2;
+	position: fixed;
+	right:10px;
+	top: 25px;
+}
+.navlinks{
+	z-index: 2;
+	position: fixed;
+	top: 105px;
+	width: 100%
+}
+
+.center {
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.primarynavlinks {
+	
+	display: inline-block;
+	vertical-align: top;
+	border: 5px solid #a1a1a1;
+	padding: 15px 20px;
+	background: grey;
+	font-size: 25px;
+	color: #f2f2f2;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* The Modal (background) */
+.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 3; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  right: 0;
+	  left: 300px;
+	  top: 0;
+	  width: 50%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 80%;
+}
+
+/* The Close Button */
+.close {
+	  color: #aaaaaa;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+}

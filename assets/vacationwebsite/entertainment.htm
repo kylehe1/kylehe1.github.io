@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  type="text/css" href="styles.css"/>
+<title>Welcome to Taniti Resorts!</title>
+</head>
+
+<body>
+
+<header>
+	<div>
+		<h1>
+			<a href="index.htm"><img src="logo.png" alt="Taniti Resorts logo"/></a>
+			TanitiResorts.com
+		</h1>
+		
+	</div>
+</header>
+	<div class="book-content">
+		<form>
+			<table>
+			<tr>
+				<td>
+				<label for="check-in">Check-in Date:</label>
+				<input type = "date" id="check-in" name="check-in">
+				<label for="check-out">Check-out Date:</label>
+				<input type = "date" id="check-out" name="check-out">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				Adults: <input type="text" size="1">
+				Kids: <input type="text" size="1">
+				<input type="radio" name="transport_type">Cruise
+				<input type="radio" name="transport_type">Flight
+				<input type="button" id="bookButton" value ="Book Now">
+				</td>
+			</tr>
+			
+			</table>
+		</form>
+	</div>
+	
+	<div id="myBooking" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p style="text-align:center" >Booking Trip Form</p>
+			<form>
+				<table class="center">
+					<tr>
+						<td>
+							First and Last Name:&emsp;&emsp; <input size="50" type="text"><br>
+						<br>Email Address:&emsp;&emsp;&emsp;&emsp; <input type="text" size="50"><br>
+						<br>Phone Number:&emsp;&emsp;&emsp;&emsp; <input type="text" size="50"><br>
+						<br>Preferred Contact:&emsp;&emsp;&emsp;&emsp;
+						Email:<input type="checkbox">&emsp;&emsp;&emsp;&emsp;
+						Phone: <input type="checkbox"><br>
+						<br><label for="check-in">Check-in Date:</label>
+							<input type = "date" id="check-in" name="check-in">&emsp;&emsp;&emsp;&emsp;
+							<label for="check-out">Check-out Date:</label>
+							<input type = "date" id="check-out" name="check-out">
+							<br>
+						<br><label for="packages">Select A Package:&emsp;&emsp;&emsp;</label>
+								<select name="packages" id="packages">
+								  <option value="family">Family Package</option>
+								  <option value="attractions">Local Attraction Package</option>
+								  <option value="saver">Super Saver Package</option>
+								  <option value="cruise">Cruise Package</option>
+								</select>
+							<br>
+							<br><label for="lodging">Select Lodging:&emsp;&emsp;&emsp;&emsp;</label>
+								<select name="lodging" id="lodging">
+								  <option value="hostel">Super Stay Hostel</option>
+								  <option value="resort">4 Star Resort</option>
+								  <option value="hotel">Hotel R Us</option>
+								  <option value="bnb">B n B</option>
+								  <option value="bnbtaniti">Best Bed and Breakfast in Taniti</option>
+								  <option value="halls">Hall's Hotel</option>
+								  <option value="inn">Taniti Inn</option>
+								  <option value="tanitibnb">Taniti Bed n Breakfast</option>
+								</select>
+							<br>
+							<br><label for="transport">Select Transportation:&emsp;</label>
+								<select name="transport" id="transport">
+								  <option value="flight1">Single Family Flight - Roundtrip</option>
+								  <option value="flight2">Large Family Flight - Roundtrip</option>
+								  <option value="flight3">Business Flight - Roundtrip</option>
+								  <option value="cruise1">Family Cruise</option>
+								  <option value="cruise2">Vacation Cruise</option>
+								</select>
+							<br>
+						<br><input type="button" id="submitButton" value="Submit">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+
+<script>
+var modal = document.getElementById("myBooking");
+var btn = document.getElementById("bookButton");
+var subbtn = document.getElementById("submitButton");
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+subbtn.onclick = function() {
+  modal.style.display = "none";
+  alert("Thank you for submitting your information! A travel agent will reach out to you shortly.");
+}
+</script>
+
+<section>
+	<div class="navlinks">
+		<table class="center" style="table-layout:fixed">
+			<tr>
+				<td><a class="primarynavlinks" href="index.htm">Home</a></td>
+				<td><a class="primarynavlinks" href="about.htm">About The Island</a></td>
+				<td><a class="primarynavlinks" href="lodging.htm">Lodging</a></td>
+				<td><a class="primarynavlinks" href="food.htm">Dining</a></td>
+				<td><a class="primarynavlinks" id="active-page" href="entertainment.htm">Entertainment</a></td>
+				<td><a class="primarynavlinks" href="transportation.htm">Transportation</a></td>
+				<td><a class="primarynavlinks" href="faq.htm">FAQ</a></td>
+			</tr>
+		</table>
+	</div>
+<article>
+	<table class="center" style="text-align:center; border-spacing:25px">
+		<tr>
+		<h2><center>Entertainment At Taniti:</center></h2>
+			<tr>
+			<h1><center>In this list, you'll find numerous options of fun in Taniti.<br>
+			Most, if not all, within walking distance.<br>
+			Please read below but keep in mind these options are seasonal so please mention them to your travel agent!</center>
+				<td>
+					<img src="image.png" alt="Enjoy the Beach"/><br>
+				</td>
+				<td>
+					Enjoy the Beach<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+
+				<td>
+					<img src="image.png" alt="The Art Gallery"/><br>
+				</td>
+				<td>
+					</a>The Art Gallery<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<img src="image.png" alt="The Arcade"/><br>
+				</td>
+				<td>
+					</a>The Arcade<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+
+				<td>
+					<img src="image.png" alt="The Brewery"/><br>
+				</td>
+				<td>
+					</a>The Brewery<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<img src="image.png" alt="The Dance Club"/><br>
+				</td>
+				<td>
+					</a>The Dance Club<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+
+				<td>
+					<img src="image.png" alt="Local History Museum"/><br>
+				</td>
+				<td>
+					</a>Local History Museum<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<img src="image.png" alt="Fishing Tour"/><br>
+				</td>
+				<td>
+					</a>Fishing Tour<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+
+				<td>
+					<img src="image.png" alt="Snorkeling"/><br>
+				</td>
+				<td>
+					</a>Snorkeling<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<img src="image.png" alt="Zip-Lining"/><br>
+				</td>
+				<td>
+					</a>Zip-Lining in the Rainforest<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+			</tr>
+		</tr>
+	</table>
+	
+	<table class="center" style="text-align:center; border-spacing:25px">
+		<tr>
+			<h1><center>Sightseeing for your family adventure!<br>
+			Most, if not all, within walking distance.<br>
+			</center>
+			<tr>
+				<td>
+					<img src="image.png" alt="Architecture"/><br>
+				</td>
+				<td>
+					See the Native Architecture<br>
+				</td>
+				<td>
+					<strong>Description:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+			
+				<td>
+					<img src="image.png" alt="Yellow Leaf Bay"/><br>
+				</td>
+				<td>
+					</a>Yellow Leaf Bay<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<img src="image.png" alt="Explore the Rainforest"/><br>
+				</td>
+				<td>
+					</a>Explore the Rainforest<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+
+				<td>
+					<img src="image.png" alt="Boat Tours"/><br>
+				</td>
+				<td>
+					</a>Boat Tours<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+			</tr>
+			
+				<tr>
+				<td>
+					<img src="image.png" alt="Volcano Tour"/><br>
+				</td>
+				<td>
+					</a> Volcano Tour<br>
+				</td>
+				<td>
+					<strong>Description:</strong>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<br>In augue odio, accumsan vitae sollicitudin eget, luctus at sapien. <br>
+				</td>
+			</tr>
+		</tr>
+	</table>
+	<table class="center">
+			<tr>
+				<td>
+				<center><h1>And so much more.<br>
+				Please discuss with your travel agent today!</h1></center>
+					<br><br><br><br><br><br>
+				</td>
+			</tr>
+	</table>
+</article>
+<aside>
+<table class="center" style="text-align:center; border-spacing: 85px">
+		<tr>
+		<h2>Seize The Day:</h2>
+			<td>
+				<img src="image.png" alt="Family Package"/><br> Family Package
+			</td>
+			<td>
+				<img src="image.png" alt="Local Attraction Package"/><br> Local Attraction Package
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="image.png" alt="Super Saver Package"/><br> Super Saver Package
+			</td>
+			<td>
+				<img src="image.png" alt="Cruise Package"/><br> Cruise Package
+			</td>
+		</tr>
+	</table>
+</aside>
+</section>
+
+<footer>
+<table class="center" style="text-align:center; border-spacing: 20px;">
+<tr>
+<td>
+<a href="index.htm">Home</a></td>
+<td>
+<a href="about.htm">About The Island</a></td>
+<td>
+<a href="lodging.htm">Lodging</a></td>
+<td>
+<a href="food.htm">Dining</a></td>
+<td>
+<a href="entertainment.htm">Entertainment</a></td>
+<td>
+<a href="transportation.htm">Transportation</a></td>
+<td>
+<a href="faq.htm">FAQ</a></td>
+</tr>
+</table>
+</footer>
+
+</body>
+</html>

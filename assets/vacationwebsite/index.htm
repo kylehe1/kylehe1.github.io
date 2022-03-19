@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  type="text/css" href="styles.css"/>
+<title>Welcome to Taniti Resorts!</title>
+</head>
+
+<body>
+
+<header>
+	<div>
+		<h1>
+			<a href="index.htm"><img src="logo.png" alt="Taniti Resorts logo"/></a>
+			TanitiResorts.com
+		</h1>
+		
+	</div>
+</header>
+	<div class="book-content">
+		<form>
+			<table>
+			<tr>
+				<td>
+				<label for="check-in">Check-in Date:</label>
+				<input type = "date" id="check-in" name="check-in">
+				<label for="check-out">Check-out Date:</label>
+				<input type = "date" id="check-out" name="check-out">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				Adults: <input type="text" size="1">
+				Kids: <input type="text" size="1">
+				<input type="radio" name="transport_type">Cruise
+				<input type="radio" name="transport_type">Flight
+				<input type="button" id="bookButton" value ="Book Now">
+				</td>
+			</tr>
+			
+			</table>
+		</form>
+	</div>
+	
+	<div id="myBooking" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p style="text-align:center" >Booking Trip Form</p>
+			<form>
+				<table class="center">
+					<tr>
+						<td>
+							First and Last Name:&emsp;&emsp; <input size="50" type="text"><br>
+						<br>Email Address:&emsp;&emsp;&emsp;&emsp; <input type="text" size="50"><br>
+						<br>Phone Number:&emsp;&emsp;&emsp;&emsp; <input type="text" size="50"><br>
+						<br>Preferred Contact:&emsp;&emsp;&emsp;&emsp;
+						Email:<input type="checkbox">&emsp;&emsp;&emsp;&emsp;
+						Phone: <input type="checkbox"><br>
+						<br><label for="check-in">Check-in Date:</label>
+							<input type = "date" id="check-in" name="check-in">&emsp;&emsp;&emsp;&emsp;
+							<label for="check-out">Check-out Date:</label>
+							<input type = "date" id="check-out" name="check-out">
+							<br>
+						<br><label for="packages">Select A Package:&emsp;&emsp;&emsp;</label>
+								<select name="packages" id="packages">
+								  <option value="family">Family Package</option>
+								  <option value="attractions">Local Attraction Package</option>
+								  <option value="saver">Super Saver Package</option>
+								  <option value="cruise">Cruise Package</option>
+								</select>
+							<br>
+							<br><label for="lodging">Select Lodging:&emsp;&emsp;&emsp;&emsp;</label>
+								<select name="lodging" id="lodging">
+								  <option value="hostel">Super Stay Hostel</option>
+								  <option value="resort">4 Star Resort</option>
+								  <option value="hotel">Hotel R Us</option>
+								  <option value="bnb">B n B</option>
+								  <option value="bnbtaniti">Best Bed and Breakfast in Taniti</option>
+								  <option value="halls">Hall's Hotel</option>
+								  <option value="inn">Taniti Inn</option>
+								  <option value="tanitibnb">Taniti Bed n Breakfast</option>
+								</select>
+							<br>
+							<br><label for="transport">Select Transportation:&emsp;</label>
+								<select name="transport" id="transport">
+								  <option value="flight1">Single Family Flight - Roundtrip</option>
+								  <option value="flight2">Large Family Flight - Roundtrip</option>
+								  <option value="flight3">Business Flight - Roundtrip</option>
+								  <option value="cruise1">Family Cruise</option>
+								  <option value="cruise2">Vacation Cruise</option>
+								</select>
+							<br>
+						<br><input type="button" id="submitButton" value="Submit">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+
+<script>
+var modal = document.getElementById("myBooking");
+var btn = document.getElementById("bookButton");
+var subbtn = document.getElementById("submitButton");
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+subbtn.onclick = function() {
+  modal.style.display = "none";
+  alert("Thank you for submitting your information! A travel agent will reach out to you shortly.");
+}
+</script>
+
+<section>
+	<div class="navlinks">
+		<table class="center" style="table-layout:fixed">
+			<tr>
+				<td><a class="primarynavlinks" id="active-page" href="index.htm">Home</a></td>
+				<td><a class="primarynavlinks" href="about.htm">About The Island</a></td>
+				<td><a class="primarynavlinks" href="lodging.htm">Lodging</a></td>
+				<td><a class="primarynavlinks" href="food.htm">Dining</a></td>
+				<td><a class="primarynavlinks" href="entertainment.htm">Entertainment</a></td>
+				<td><a class="primarynavlinks" href="transportation.htm">Transportation</a></td>
+				<td><a class="primarynavlinks" href="faq.htm">FAQ</a></td>
+			</tr>
+		</table>
+	</div>
+<article>
+	<table class="center" style="text-align:center; border-spacing:50px">
+		<tr>
+		<h2>Top Places To Stay:</h2>
+			<td>
+				<a href="lodging.htm"><img src="image.png" alt="Super Stay Hostel"/></a><br> Super Stay Hostel<br>Rating: 4 / 5
+			</td>
+			<td>
+				<a href="lodging.htm"><img src="image.png" alt="4 Star Resort"/></a><br> 4 Star Resort<br>Rating: 4.2 / 5
+			</td>
+			<td>
+				<a href="lodging.htm"><img src="image.png" alt="Hotel R Us"/></a><br> Hotel R Us<br>Rating: 4.5 / 5
+			</td>
+			<td>
+				<a href="lodging.htm"><img src="image.png" alt="B n B"/></a><br> B n B <br>Rating: 4.7 / 5
+			</td>
+			<td style="vertical-align: bottom">
+				<button onclick="window.location.href='lodging.htm';"> See more
+			</td>
+		</tr>
+	</table>
+	
+	<table class="center" style="text-align:center; border-spacing: 50px">
+		<tr>
+		<h2>Favorite Things To Do:</h2>
+			<td>
+				<a href="entertainment.htm"><img src="image.png" alt="Volcano Tours"/></a><br> Volcano Tours
+			</td>
+			<td>
+				<a href="entertainment.htm"><img src="image.png" alt="Snorkeling"/></a><br> Snorkeling
+			</td>
+			<td>
+				<a href="entertainment.htm"><img src="image.png" alt="Local History Museum"/></a><br>Local History Museum
+			</td>
+			<td>
+				<a href="entertainment.htm"><img src="image.png" alt="Art Gallery"/></a><br> Art Gallery
+			</td>
+			<td style="vertical-align: bottom">
+				<button onclick="window.location.href='entertainment.htm';"> See more
+			</td>
+		</tr>
+
+	</table>
+</article>
+<aside>
+<table class="center" style="text-align:center; border-spacing: 85px">
+		<tr>
+		<h2>Seize The Day:</h2>
+			<td>
+				<img src="image.png" alt="Family Package"/><br> Family Package
+			</td>
+			<td>
+				<img src="image.png" alt="Local Attraction Package"/><br> Local Attraction Package
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="image.png" alt="Super Saver Package"/><br> Super Saver Package
+			</td>
+			<td>
+				<img src="image.png" alt="Cruise Package"/><br> Cruise Package
+			</td>
+		</tr>
+	</table>
+</aside>
+</section>
+
+<footer>
+<table class="center" style="text-align:center; border-spacing: 20px;">
+<tr>
+<td>
+<a href="index.htm">Home</a></td>
+<td>
+<a href="about.htm">About the Island</a></td>
+<td>
+<a href="lodging.htm">Lodging</a></td>
+<td>
+<a href="food.htm">Dining</a></td>
+<td>
+<a href="entertainment.htm">Entertainment</a></td>
+<td>
+<a href="transportation.htm">Transportation</a></td>
+<td>
+<a href="faq.htm">FAQ</a></td>
+</tr>
+</table>
+</footer>
+
+</body>
+</html>

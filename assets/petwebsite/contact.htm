@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet"  type="text/css" href="styles.css"/>
+<title>Paradigm Pet Professionals</title>
+</head>
+<body>
+
+<header>
+<div>
+<a href="index.htm"><img src="logo.png" alt="Paradigm Pet Professionals logo" style="width:20%;height:10%;"/></a>
+</div>
+<div class="topnav">
+<a class="primarynavlinks" href="index.htm">Home</a>
+<a class="primarynavlinks" href="cats.htm">Cats</a>
+<a class="primarynavlinks" href="dogs.htm">Dogs</a>
+<a class="primarynavlinks" href="fish.htm">Fish</a>
+<a class="primarynavlinks" id="active-page" href="contact.htm">Contact Us</a>
+</div>
+</header>
+
+<nav>
+<a class="navlinks" href="index.htm">Home</a>
+<a class="navlinks" href="cats.htm">Cats</a>
+<a class="navlinks" href="dogs.htm">Dogs</a>
+<a class="navlinks" href="fish.htm">Fish</a>
+<a class="navlinks" href="contact.htm">Contact Us</a>
+</nav> 
+
+<section>
+<article>
+<form>
+<b>Owner Information:</b><br>
+Name:<input type="text" name="name"><br>
+Phone Number: <input type="text" name="phone"><br>
+Email Address: <input type="text" name="email"><br>
+Time Zone: <input type="text" name="timezone"><br>
+Current pet?<input type="checkbox" id="have_pet" name="have_pet" value="current_pet"><br>
+<br><b>Pet Information:</b><br>
+Name:<input type="text" name="pet_name"><br>
+Type:<input list="pet_types" name="pet_type"><br>
+<datalist id="pet_types">
+<option value="Cat">
+<option value="Dog">
+<option value="Fish">
+<option value="Bird">
+<option value="Reptile">
+<option value="Insect/Spider">
+<option value="Small Animal">
+</datalist>
+Pet Age: <input type="number" name="age" min="0"><br>
+<input type="submit" value="Submit">
+</form>
+</article> 
+</section>
+
+<footer>
+<a href="index.htm">Home</a> | 
+<a href="cats.htm">Cats</a> | 
+<a href="dogs.htm">Dogs</a> | 
+<a href="fish.htm">Fish</a> | 
+<a href="contact.htm">Contact Us</a><br/>
+</footer>
+
+</body>
+</html>
