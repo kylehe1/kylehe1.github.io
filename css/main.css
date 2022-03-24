@@ -6,17 +6,23 @@
 	float: left;
 }
 .row:after{
-		content: "";
-		display: table;
-		clear:both;
+	content: "";
+	display: table;
+	clear:both;
 }
-
+img.rounded-corners{
+	border-radius: 120px 20px 120px 20px;
+}
 .profile {
-	vertical-align: middle;
+	margin: auto;
+	width: 70%;
+	padding: 70px 0;
 	font-size: 22px;
 }
-
+.shortcuts{
+	text-align: left;
+}
 
 .side {
-	background-color: #D8D5E3 /* purplish color*/
+	background-color: #D8D5E3; /* purplish color*/
 }
