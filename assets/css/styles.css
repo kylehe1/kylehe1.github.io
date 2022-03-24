@@ -828,9 +828,3 @@ body[data-theme="dark"] .text-muted {
     max-width: inherit;
   }
 }
-
-.topbtn{
-    float: right;
-    text-align: center;
-    font-size: 24px;
-}
