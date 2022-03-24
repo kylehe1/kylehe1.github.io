@@ -16,11 +16,13 @@ img.rounded-corners{
 .profile {
 	margin: auto;
 	width: 70%;
-	padding: 70px 0;
+	padding: 90px 0;
 	font-size: 22px;
 }
 .shortcuts{
-	text-align: left;
+	margin: auto;
+	width: 80%;
+	padding: 10px 0;
 }
 
 .side {
